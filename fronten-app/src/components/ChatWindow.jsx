@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { io } from "socket.io-client";
 import "./Chat.css";
 
-const socket = io("http://localhost:5000");
+const socket = io("https://app-backend-9l8t.onrender.com/");
 
 function Chat({ userId }) {
   const [contacts, setContacts] = useState([]);
